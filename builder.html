@@ -67,6 +67,11 @@
                                 <label class="form-label">Service Areas</label>
                                 <textarea class="form-control" id="serviceAreas" rows="3" placeholder="Minneapolis, St. Paul, Bloomington..."></textarea>
                             </div>
+                            
+                            <div class="mb-3">
+                                <label class="form-label">Special Discount</label>
+                                <input type="text" class="form-control" id="specialDiscount" placeholder="$20 off when you book online">
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -149,9 +154,13 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Paste your content in the format: Section ID | Content</p>
-                    <textarea class="form-control" id="importData" rows="10" placeholder="hero-title | Professional Junk Removal Services
-hero-subtitle | Fast, reliable, and eco-friendly junk removal in Minneapolis"></textarea>
+                    <p>Paste your content in one of these formats:</p>
+                    <p><strong>Format 1:</strong> Section ID | Content<br>
+                    <strong>Format 2:</strong> Tab-separated (from spreadsheet copy)</p>
+                    <textarea class="form-control" id="importData" rows="10" placeholder="homepage-1 | Professional Junk Removal Services in Your City
+homepage-2 | Fast, reliable, and eco-friendly service
+
+OR paste directly from Google Sheets column G"></textarea>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
